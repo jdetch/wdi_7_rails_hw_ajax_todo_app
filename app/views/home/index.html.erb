@@ -1,27 +1,28 @@
-<h1>To-Do List</h1>
-<h3>What do you need to do?</h3>
+  <h1>To-Do List</h1>
+  <h3>What do you need to do?</h3>
 
-<div class="row">
-  <div class="small-10 columns">
-    <form id="new-task-form">
-      <input type="text" id="new-task-text" placeholder="Add a To Do item">
+  <div class="row">
+    <div class="small-10 columns">
+      <form id="new-task-form" action="http://localhost:3000/tasks">
+        <input type="text" id="new-task-text" placeholder="Add a To Do item">
+    </div>
+    <div class="small-2 columns">
+        <button type="submit" id="create-task-button">Create Item</button>
+    </div>
+      </form>
   </div>
-  <div class="small-2 columns">
-      <button type="submit" id="create-task-button">Create Item</button>
-  </div>
-    </form>
-</div>
 
 
-<div class="row">
-  <div class="small-6 columns">
-    <h4 class="task-header">Incomplete Tasks</h4>
-      <ol id="incomplete-tasks-list">
-      </ol>
+  <div class="row">
+    <div class="small-6 columns">
+      <h4 class="task-header">Incomplete Tasks</h4>
+        <ol id="incomplete-tasks-list">
+        </ol>
 
-  </div>
-  <div class="small-6 columns">
-    <h4 class="task-header">Completed Tasks</h4>
-      <ol id="completed-tasks-list">
-      </ol>
-  </div>
+    </div>
+    <div class="small-6 columns">
+      <h4 class="task-header">Completed Tasks</h4>
+        <ol id="completed-tasks-list">
+        </ol>
+    </div>
+
